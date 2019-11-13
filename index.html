@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Chitown Traffic Dodger Game</title>
+	<!-- STYLE SHEET -->
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Game.css">
+	
+</head>
+
+<body>
+<!-- NAME OF THE GAME -->
+<div id="header">Chitown Traffic Dodger</div>
+	
+<div class="container">
+	<!-- ELEMENTS OF THE GAME -->
+	<div id="road">
+		<div id="roadImage"></div>
+		<div id="myCar"></div> 
+		<div id="car"></div>
+		<!-- <div id="car2"></div> -->
+					
+	</div>
+</div>
+    <div id="buttons">
+		<!-- SIGNS -->
+		<p class="Sign" id="speedSign">Speed: <br>0 Km/h</p><br>
+		<p class="Sign" id="timerSign">Timer: <br>0 Sec</p><br>
+		<p class="Sign" id="distanceSign">Distance: <br>0 Km</p><br>
+		<p class="Sign" id="collisionSign">Number of Collisions: <br>0</p>
+		<!-- MENU BUTTONS -->
+		<button class="dirButt" id="Start">Start</button><br>
+		<button class="dirButt" id="Stop">Stop</button><br>
+		<button class="dirButt" id="Reset">Reset</button><br>
+		
+	</div>
+
+<div class="container">
+
+	<div class="moveButtons">
+		<!-- BUTTONS TO CONTROL GAME -->
+		<button class="dirButt" id="speedUp">Speed Up</button><br>
+		<button class="dirButt" id="leftButton">Left</button>
+		<button class="dirButt" id="rightButton">Right</button><br>
+		<button class="dirButt" id="speedDown">Speed Down</button><br>
+		<!-- AUDIO TRACK -->
+		<audio volume=0.2 controls>
+				<source  src="spyhunter.mp3" type="audio/mpeg">
+		</audio>	
+			
+	</div>
+
+	<!-- SOUND TRACKS -->
+<audio id="CrashSound">
+	<source  src="Smashing-Yuri_Santana-1233262689.wav" type="audio/mpeg">
+</audio>
+<audio id="StreetSound" loop>
+	<source  src="Traffic_Jam-Yo_Mama-1164700013.mp3" type="audio/mpeg">
+</audio>
+	
+		
+</div>
+<!-- JAVASCRIPT SCRIPT  -->
+<script src="Game.js"></script>
+</body>
+</html>

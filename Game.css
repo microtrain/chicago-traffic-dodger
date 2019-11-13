@@ -1,0 +1,155 @@
+#header {
+    width: 635px;
+    background-color: gray;
+    height: auto;
+    margin: auto;
+	text-align: center;
+	color: white;
+    font-family: 'Lato', sans-serif;
+	font-size: 30px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.container {
+    width: 635px;
+    margin: auto;
+}
+
+#buttons {
+    width: 126px;
+    float: left;
+    height: 600px;
+	text-align: center;
+    background-color: #4CAF50;
+	margin-top: 3px;
+	margin-left: 3px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+#road {
+    width: 500px;
+    height: 600px;
+	float: left;
+    background-size: contain;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-top: 3px;
+	position: relative;
+	overflow: hidden;
+}
+
+#roadImage {
+	bottom: 0px;
+	background: url("road01.png");
+	background-repeat: repeat-y;
+	background-size: contain;
+	height: 1800px;
+	width: 500px;
+	position: absolute;
+	animation: slide 0s linear infinite;
+}
+
+@keyframes slide{
+	0%{
+		transform: translate3d(0, 0, 0);
+	}
+	100%{
+		transform: translate3d(0, 650px, 0);
+	}
+}
+
+#car {
+	/* Change wrong side driver background-image below */
+	width: 25px;
+	height: 60px;
+	/* background-image: url("white_911.png"); */
+	background-image: url("taxi.png");
+	background-size: contain;
+	border-radius: 5px;
+	position: absolute;
+	left: 125px;
+}
+
+#car2 {
+	width: 25px;
+	height: 60px;
+	background-image: url("taxi.png");
+	background-size: contain;
+	border-radius: 5px;
+	position: absolute;
+	left: 200px;
+}
+
+#myCar {
+	width: 30px;
+	height: 60px;
+	background-image: url("red_macan.png");
+	background-size: contain;
+	border-radius: 5px;
+	position: absolute;
+	left: 125px;
+	top: 530px;
+}
+
+.moveButtons {
+	width: 635px;
+    background-color: gray;
+    height: auto;
+    border: 2px solid black;
+	border-radius: 5px;
+	float: left;
+	position: relative;
+	margin-top: 3px;
+	text-align: center;
+}
+
+.Sign {
+	height: auto;
+	border: 1px solid black;
+	border-radius: 3px;
+	background-color: gray;
+	color: white;
+    font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+.dirButt {
+	display: inline-block;
+	height: 40px;
+	width: 100px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	font-size: 15px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+.dirButt:hover {
+	background-color: #3e8e41
+}
+
+.dirButt:active {
+	background-color: #3e8e41;
+	transform: translateY(1px);
+}
+
+#Start {
+	background-color: green;
+}
+
+#Stop {
+	background-color: orange;
+}
+
+#Reset {
+	background-color: red;
+}
+
